@@ -5,7 +5,7 @@ import com.tinqinacademy.authenticationHotel.api.models.exceptions.errorWrapper.
 import io.vavr.control.Either;
 
 
-public interface OperationProcess<I extends OperationInput, O extends OperationOutput>  {
+public interface OperationProcess<I extends OperationRequest, O extends OperationResponse>  {
 
     Either<ErrorWrapper,O> process(I input);
 }

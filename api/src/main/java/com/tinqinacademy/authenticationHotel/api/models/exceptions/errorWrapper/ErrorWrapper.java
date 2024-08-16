@@ -1,5 +1,6 @@
 package com.tinqinacademy.authenticationHotel.api.models.exceptions.errorWrapper;
 
+import com.tinqinacademy.authenticationHotel.api.models.exceptions.baseError.Error;
 import lombok.*;
 import org.springframework.http.ResponseEntity;
 

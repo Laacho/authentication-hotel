@@ -1,4 +1,4 @@
 package com.tinqinacademy.authenticationHotel.api.models.baseOperations;
 
-public interface OperationOutput {
+public interface OperationResponse {
 }
