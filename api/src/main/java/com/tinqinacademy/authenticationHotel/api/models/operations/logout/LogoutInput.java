@@ -1,22 +1,20 @@
 package com.tinqinacademy.authenticationHotel.api.models.operations.logout;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.tinqinacademy.authenticationHotel.api.models.baseOperations.OperationRequest;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.*;
 
 @Getter
 @Setter
 @ToString
-@Builder
+@Builder(toBuilder = true)
 @AllArgsConstructor
 @NoArgsConstructor
 public class LogoutInput implements OperationRequest {
-    @Size(min = 1)
-    @NotNull(message = "jwt token cannot be null")
+
+    @JsonIgnore
     private String jwt;
 
-    @Size(min = 1)
-    @NotNull(message = "userContextId  cannot be null")
+    @JsonIgnore
     private String userContextId;
 }

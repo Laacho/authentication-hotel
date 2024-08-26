@@ -1,7 +1,7 @@
 package com.tinqinacademy.authenticationHotel.api.models.operations.demote;
 
 import com.tinqinacademy.authenticationHotel.api.models.baseOperations.OperationRequest;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.util.UUID;
@@ -13,6 +13,6 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DemoteUserInput implements OperationRequest {
-    @NotBlank(message = "userID cannot be blank")
+    @NotNull(message = "userID cannot be null")
     private UUID userId;
 }

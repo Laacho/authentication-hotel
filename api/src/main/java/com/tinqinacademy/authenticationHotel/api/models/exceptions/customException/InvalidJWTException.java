@@ -1,7 +1,7 @@
 package com.tinqinacademy.authenticationHotel.api.models.exceptions.customException;
 
-public class DuplicateEmailException extends RuntimeException {
-    public DuplicateEmailException(String message) {
+public class InvalidJWTException extends RuntimeException {
+    public InvalidJWTException(String message) {
         super(message);
     }
 }
