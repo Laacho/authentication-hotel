@@ -1,0 +1,3 @@
+CREATE DATABASE authentication;
+CREATE DATABASE comments;
+CREATE DATABASE hotel;
